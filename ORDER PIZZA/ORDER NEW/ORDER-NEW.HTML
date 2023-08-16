@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="order-new.css" />
+		<title>PIZZA ORDER</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="customization_container">
+				<div class="customize">
+					<label for="size">
+						Size:
+						<select name="size" id="size">
+							<option value="Small">Small</option>
+							<option value="Medium">Medium</option>
+							<option value="Large">Large</option>
+						</select>
+					</label>
+				</div>
+				<div class="customize">
+					Crust:
+					<select name="crust" id="crust">
+						<option value="Thin">Thin</option>
+						<option value="Thick">Thick</option>
+						<option value="Stuffed">Stuffed</option>
+					</select>
+				</div>
+				<div class="customize">
+					Sauses:
+					<select name="sauses" id="sauses">
+						<option value="Tomato">Tomato</option>
+						<option value="BBQ">BBQ</option>
+						<option value="Spicy">Spicy</option>
+					</select>
+				</div>
+				<div class="quantity">
+					Quantity :
+					<input type="number" name="quantity" id="quantity" />
+				</div>
+				<div class="km">
+					Kilometer :
+					<input type="range" name="km" id="km" min="1" max="10" />
+				</div>
+				<div class="submit">
+					<input
+						type="submit"
+						value="Order Pizza"
+						onclick="showCart()"
+					/>
+				</div>
+				<p class="cart"></p>
+				<button onclick="generateBill()">Place Order</button>
+			</div>
+		</div>
+	</body>
+	<script src="order-new.js"></script>
+</html>

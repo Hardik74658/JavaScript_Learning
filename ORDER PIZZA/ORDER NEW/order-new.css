@@ -1,0 +1,41 @@
+*,::after,::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(95, 185, 95);
+    font-weight: 600;
+}
+body, select, button ,input{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+}
+button , input , select{
+    background-color: rgb(234, 116, 116);
+    border: none;
+    padding: 5px;
+    border-radius: 8px;
+}
+input[type=range] {
+    height: 16px;
+    cursor: pointer;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* border: 1px solid blue; */
+    gap: 1rem;
+}
+.customization_container{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 1rem;
+    gap: 1rem;
+}

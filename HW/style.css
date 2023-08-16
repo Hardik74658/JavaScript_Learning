@@ -1,0 +1,9 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: royalblue;
+}
+form input {
+    display: block;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza order</title>
+    <script src="./order.js"></script>
+</head>
+<style>
+    #box{
+        width: 300px;
+        height: 300px;
+        border: 1px solid green ;
+        border-radius: 5px;
+        margin: 1rem 0;
+        padding: 1rem;
+        box-sizing: border-box;
+    }
+    .box1{
+            border: 1px solid crimson;
+            width: 300px;
+            height: 300px;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            display: inline-block;
+    }
+</style>
+<body>
+    <form onsubmit="order(event)">
+        <div>
+            <label for="size">
+                SIZE:
+                <select name="size" id="size">
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                </select>
+            </label>
+        </div>
+        <div>
+            <label for="crust">
+                CRUST:
+                <select name="crust" id="crust">
+                    <option value="thin">Thin</option>
+                    <option value="thick">Thick</option>
+                    <option value="stuffed">Stuffed</option>
+                </select>
+            </label>
+        </div>
+        <div>
+            <label for="sauses">
+                CRUST:
+                <select name="sauses" id="sauses">
+                    <option value="tomato">Tomato</option>
+                    <option value="bbq">BBQ</option>
+                    <option value="spicy">Spicy</option>
+                </select>
+            </label>
+        </div>
+        <div>
+            QUANTITY:
+            <input type="number" name="qty" id="qty">
+        </div>
+        <input type="submit" value="Order Pizza" id="submit">
+        <div id="box">
+
+        </div>
+        <div id ="printbill" class="box1">
+            SIZE:--<p id ="psize"></p>
+            CRUST:--<p id ="pcrust"></p>
+            SAUSE<p id ="psause"></p>
+            QTY<p id ="pqty"></p>
+            KM<p id ="pkm"></p>
+            TAX<p id ="ptax"></p>
+            TOTAL<p id ="ptotal"></p>
+        </div>
+        <button onclick="placeOrder()">Place Order</button>
+    </form>
+</body>
+</html>

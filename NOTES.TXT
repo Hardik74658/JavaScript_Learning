@@ -1,0 +1,52 @@
+console.log()   ---> for printing on console
+console.warn()  ---> to give warning(print yellow fonts) on console
+console.error() ---> to give error(print red fonts) on console
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
+VARIABLES
+
+=>Variables are containers to store data
+=>JS is dynamically typed language because we dont need to give data types to any variables it automatically detects
+=>number,string,boolean,null,undefined,object
+
+=>Decalaration
+- var  : Global Scope
+- let  : Block Scope
+- const: Block Scope Final
+
+=> typeof() for data types
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
+OPERATORS
+
+=>operators : opearators are special symbols which are used to perform operations on operands
+
+=>type of opearators:
+- arithmatic opearators : +,-,*,/,%,++,--
+- relational opearators : <,>,<=,>=,==,!=,===,!==,instanceof
+- logical opearators : &&,||,!
+- bitwise opearators : &,|,^,~,<<,>>,>>>
+- asisgnment opearators : =,+=,-=,*=,/=,%=,<<=,>>=,&=,^=,|=
+- ternary opearators : ?:
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
+IF/ELSE
+
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
+SWITCH CASE
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
+LOOPS
+
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
+FUNCTIONS
+
+
